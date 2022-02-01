@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */ /*This needs to be checked for GDPR compliany*/
 body {
     margin: 0;
     transition: all .2s;
@@ -23,9 +23,9 @@ main {
     padding-top: 0;
     padding-bottom: -10px;
     border: solid 0px #ececec;
-    color: #707070;
+    color: #555555;
     border-radius: 8px;
-    box-shadow: 0 0  15px 0px grey;
+    box-shadow: 0 0  8px 0px grey;
 }
 
 .main_content p {
@@ -46,10 +46,9 @@ main {
     padding-bottom: 16px;
 }
 .main_content h3 {
-    padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 16px;
+    color: #000000;
 }
 .main_content h4 {
     padding-top: 16px;
@@ -72,8 +71,13 @@ main {
 .main_content a {
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 16px;
     font-size: 18px;
+    color: #0481ff;
+    transition: all .2s ease;
+    text-decoration: none;
+}
+.main_content a:hover {
+    color: #555555;
 }
 .main_content hr {
     margin-left: 16px;
@@ -227,18 +231,25 @@ main {
     margin-left: 270px;
     margin-right: 20px;
 }
-.main_content_header_sub {
+.photo_and_text_main_container_header_sub {
     margin-left: 270px;
     color: #000000;
 }
-.main_content_header_hr {
+.photo_and_text_main_content_header_hr {
     margin: 0;
     margin-left: 287px;
     margin-right: 16px;
     padding: 0;
     color: rgb(221, 221, 221);
     border: .5px solid rgb(221, 221, 221);
-
+}
+.main_content_header_hr {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0;
+    margin: 0;
+    color: rgb(221, 221, 221);
+    border: .5px solid rgb(221, 221, 221);
 }
 .main_content_more_button {
     background-color: #ffffff;
@@ -260,10 +271,55 @@ main {
 .main_content_more_button a:hover {
     color: #000000;
 }
+.main_content_more_button2 {
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 2px #0481ff;
+    padding: 10px;
+    font-size: medium;
+    margin-right: 8px;
+    border-radius: 2px;
+    transition: all .5s ease;
+    margin-bottom: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 46%;
+}
+.main_content_more_button2 a {
+    color: #0481ff;
+    text-decoration: none;
+    margin-right: 0;
+}
+.main_content_more_button2 a:hover {
+    color: #000000;
+}
 
 .main_content_about {
     height: auto;
 }
+footer {
+    margin-top: 10px;
+}
+.main_container_header_sub {
+    color: #000000;
+}
+.warning_standart {
+    background-color: red;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    padding-top: 18px;
+}
+.two_button_group {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1200px) {
     .banner_text_centered_subheader {
@@ -278,7 +334,7 @@ main {
         font-size: 18px;
     }
     .banner_text_centered_header {
-        font-size: 70px;
+        font-size: 50px;
     }
     .banner {
         height: 160px;
@@ -296,7 +352,7 @@ main {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .main_content_header_sub {
+    .photo_and_text_main_container_header_sub {
         margin-left: 0;
     }
     .photo_and_text_container {
@@ -312,8 +368,15 @@ main {
         margin-bottom: 8px;
         width: 98%;
     }
+    .main_content_more_button2 {
+        float: none;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 8px;
+        width: 98%;
+    }
 }
-@media screen and (max-width: 565px) and (min-width: 521px) {
+@media screen and (max-width: 625px) and (min-width: 521px) {
     .main_content_more_button {
         float: none;
         margin-left: 1%;
@@ -321,11 +384,18 @@ main {
         margin-bottom: 8px;
         width: 98%;
     }
+    .main_content_more_button2 {
+        float: none;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 8px;
+        width: 98%;
+    }
     .main_content_about {
-        height: 430px;
+        height: 450px;
     }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1010px) {
     .main_content { 
         margin-left: 10px;
         margin-right: 10px;
@@ -343,5 +413,38 @@ main {
 @media screen and (max-width: 340px) {
     .banner_text_centered_header {
         font-size: 40px;
+    }
+    .main_content_more_button {
+        float: none;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 8px;
+        width: 98%;
+    }
+    .main_content_more_button2 {
+        float: none;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 8px;
+        width: 98%;
+    }
+    .main_content_about {
+        height: 680px;
+    }
+    .photo_and_text_container_photo {
+        float: none;
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+        margin-left: 2.5%;
+    }
+    .photo_and_text_container_text {
+        display: block;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .photo_and_text_main_container_header_sub {
+        margin-left: 0;
     }
 }
