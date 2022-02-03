@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../styles.css">
+    	<link rel="icon" href="../media/favicon.jpg">
+		<meta name="viewport" content="width=device-width" ,="" initial-scale="1.0">
+		<title>Jan Biernacik - Projekte - Samsung Debloat-Liste</title>
+		<script src="../main.js"></script>
+	</head>
+	<body onload="main(); mobile_scale()">
+		<header>
+			<div id="navbar">
+				<button onclick="sidebar_action()" class="navbar_element_type_button" id="sidebar_button">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</button>
+				<a class="navbar_element" href="../index.html">Startseite</a>
+				<a class="navbar_element" href="../contact.html">Kontakt</a>
+				<a class="navbar_element" href="../media.html">Medien</a>
+				<a class="navbar_element" href="../about.html">Über mich</a>				
+				<img style="float: right;" src="../media/favicon.jpg" height="100%">
+			</div>
+			<div id="mobile_navbar">
+				<button onclick="sidebar_action()" class="navbar_element_type_button" id="sidebar_button">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</button>
+				<button onclick="menu_action()" class="navbar_element" id="menu_button">Navigation >></button>
+			</div>
+		</header>
+		<div id="menu">
+			<iframe id="menu_content" src="../menu/menu_content.html"></iframe>
+		</div>
+		<div id="sidebar">
+			<iframe id="sidebar_content" src="../sidebar/sidebar_content.html"></iframe>
+		</div>
+		<main onclick="collapse_random_area_sidebar()" class="TOP">
+			<div class="main_content">
+			  <h1>Debloat-Liste für Samsung-Geräte</h1>
+			  <hr class="main_content_header_hr">
+			  <p>Samsung-Handys und Tablets kommen mit sehr viel Müll und unnötigen System-Apps die einen Einfluss auf die Akku und auf die Privatsphäre von Nutzern haben. Diese System-Apps lassen sich nur über einen root-Zugriff, oder die Android Debug Bridge (ADB) löschen.</p>
+			  <p>Wenn man die Apps über die ADB löscht, kann es frustrierend sein, wenn das Handy plötzlich nicht mehr startet, da man aus versehen eine wichtige System-App gelöscht hat. Desswegen habe ich eine Liste mit allen System-Apps erstellt, welche man ohne Probleme löschen kann.</p>
+      </div>
+      <div class="main_content">
+        <h1>Die Liste</h1>
+        <hr class="main_content_header_hr">
+        <center><iframe style="border: 2px solid #0481ff; margin-top: 8px; margin-bottom: 16px;" width="94%" height="500px" src="../media/debloat_list.txt"></iframe></center>
+      </div>
+		</main>
+		<!-- <footer class="BOTTOM">
+
+		</footer> -->
+	</body>
+</html>
