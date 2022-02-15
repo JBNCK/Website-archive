@@ -376,9 +376,6 @@ footer a:hover {
     }
 }
 @media screen and (max-width: 520px) and (min-width: 340px) {
-    p {
-        font-size: 16px;
-    }
     .banner_text_centered_header {
         font-size: 50px;
     }
@@ -420,9 +417,6 @@ footer a:hover {
         margin-right: 1%;
         margin-bottom: 8px;
         width: 98%;
-    }
-    a {
-        font-size: 16px;
     }
 }
 @media screen and (max-width: 625px) and (min-width: 521px) {
