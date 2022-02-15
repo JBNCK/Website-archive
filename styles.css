@@ -233,6 +233,7 @@ main {
 .photo_and_text_container_text {
     margin-left: 270px;
     margin-right: 20px;
+    font-size: normal;
 }
 .photo_and_text_main_container_header_sub {
     margin-left: 270px;
