@@ -70,7 +70,7 @@ main {
 .main_content a {
     padding-left: 16px;
     padding-right: 16px;
-    font-size: normal;
+    /*font-size: normal;*/
     color: #0481ff;
     transition: all .5s ease;
     text-decoration: none;
