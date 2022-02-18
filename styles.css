@@ -5,6 +5,7 @@ body {
     background-color: #fcfcfc;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 0;
+    font-size: 16px;
 }
 
 main {
@@ -233,7 +234,6 @@ main {
 .photo_and_text_container_text {
     margin-left: 270px;
     margin-right: 20px;
-    font-size: normal;
 }
 .photo_and_text_main_container_header_sub {
     margin-left: 270px;
@@ -380,6 +380,9 @@ footer a:hover {
     .banner_text_centered_header {
         font-size: 50px;
     }
+    .photo_and_text_main_content_header_hr {
+        display: none;
+    }
     .banner {
         height: 160px;
     }
@@ -490,5 +493,8 @@ footer a:hover {
     }
     .photo_and_text_main_container_header_sub {
         margin-left: 0;
+    }
+    .photo_and_text_main_content_header_hr {
+        display: none;
     }
 }
