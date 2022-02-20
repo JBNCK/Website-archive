@@ -10,7 +10,6 @@ body {
 
 main {
     margin: 0;
-    margin-top: 50px;
     transition: all .2s;
 }
 .main_content {
@@ -37,7 +36,7 @@ main {
     padding-top: 20px;
     padding-left: 16px;
     padding-right: 16px;
-    color: #ffffff;
+    color: green;
 }
 .main_content h2 {
     padding-top: 16px;
@@ -72,16 +71,20 @@ main {
     padding-left: 16px;
     padding-right: 16px;
     /*font-size: normal;*/
-    color: #0481ff;
+    color: #ffffff;
     transition: all .5s ease;
     text-decoration: none;
 }
 .main_content a:hover {
-    color: #555555;
+    color: #ececec;
 }
 .main_content hr {
+    display: none;
     margin-left: 16px;
     margin-right: 16px;
+    color: green;
+    background-color: green;
+    border: solid green 0.1px;
 }
 
 #navbar {
@@ -90,7 +93,8 @@ main {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #171717;
+    /*background-color: rgba(0, 0, 0, 0);*/
+    background-color: #000000;
     transition: all 1s;
     height: 50px;
     z-index: 2;
@@ -101,7 +105,8 @@ main {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #171717;
+    /*background-color: rgba(0, 0, 0, 0);*/
+    background-color: #000000;
     transition: all 1s;
     height: 50px;
     z-index: 2;
@@ -152,20 +157,21 @@ main {
     transition: all .2s ease;
 }
 .navbar_element_type_button {
-    background-color: #171717;
+    background-color: rgba(0, 0, 0, 0);
     color: #ffffff;
-    border: solid 15px #171717;
+    border: solid 15px rgba(0, 0, 0, 0);
     padding: 1px;
     font-size: medium;
     cursor: pointer;
     float: left;
+    font-weight: lighter;
 }
 .navbar_element {
-    background-color: #171717;
+    background-color: rgba(0, 0, 0, 0);
     color: #ffffff;
-    border: solid 16px #171717;
+    border: solid 16px rgba(0, 0, 0, 0);
     font-size: medium;
-    font-weight: bolder;
+    font-weight: lighter;
     text-decoration: none;
     text-align: center;
     margin-left: 2px;
@@ -188,6 +194,11 @@ main {
     font-style: italic;
     display: block;
 }
+.banner {
+    object-fit: cover;
+    position: relative;
+    height: 100vh;
+}
 .banner_container {
     position: relative;
     text-align: center;
@@ -197,13 +208,14 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-90%, -50%);
+    transform: translate(-98%, -50%);
     text-align: left;
 }
 .banner_text_centered_header {
-    font-size: 120px;
+    font-size: 180px;
     font-family: 'Bebas Neue';
     text-shadow: 0 0px 50px #000000;
+    color: ffffff;
 }
 .banner_text_centered_subheader {
     font-size: 30px;
@@ -381,9 +393,6 @@ footer a:hover {
     .photo_and_text_main_content_header_hr {
         display: none;
     }
-    .banner {
-        height: 160px;
-    }
     .photo_and_text_container_photo {
         float: none;
         width: 95%;
@@ -444,15 +453,6 @@ footer a:hover {
     .main_content { 
         margin-left: 10px;
         margin-right: 10px;
-    }
-    main {
-        margin-top: 50px;
-    }
-    .banner {
-        height: 200px;
-        overflow: hidden;
-        margin-right: 10px;
-        object-fit: cover;
     }
 }
 @media screen and (max-width: 340px) {
