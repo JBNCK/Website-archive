@@ -2,7 +2,7 @@
 body {
     margin: 0;
     transition: all .2s;
-    background-color: #fcfcfc;
+    background-color: #252525;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 0;
     font-size: 16px;
@@ -10,23 +10,23 @@ body {
 
 main {
     margin: 0;
-    margin-top: 90px;
+    margin-top: 50px;
     transition: all .2s;
 }
 .main_content {
-    background-color: #ffffff;
+    background-color: #212121;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 30px;
+    margin-top: 50px;
     transition: all .5s;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: -10px;
-    border: solid 0px #ececec;
-    color: #555555;
-    border-radius: 8px;
-    box-shadow: 0 0  8px 0px lightgrey;
+    border: solid 0px #505050;
+    color: #ececec;
+    border-radius: 4px;
+    /*box-shadow: 0 0  8px 0px lightgrey;*/
 }
 .main_content p {
     padding-left: 16px;
@@ -37,7 +37,7 @@ main {
     padding-top: 20px;
     padding-left: 16px;
     padding-right: 16px;
-
+    color: #ffffff;
 }
 .main_content h2 {
     padding-top: 16px;
@@ -48,7 +48,7 @@ main {
 .main_content h3 {
     padding-left: 16px;
     padding-right: 16px;
-    color: #000000;
+    color: #ffffff;
 }
 .main_content h4 {
     padding-top: 16px;
@@ -90,10 +90,9 @@ main {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #ffffff;
+    background-color: #171717;
     transition: all 1s;
     height: 50px;
-    box-shadow: 0 0  8px 0px lightgrey;
     z-index: 2;
 }
 #mobile_navbar {
@@ -102,10 +101,9 @@ main {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #ffffff;
+    background-color: #171717;
     transition: all 1s;
     height: 50px;
-    box-shadow: 0 0  8px 0px lightgrey;
     z-index: 2;
 }
 
@@ -128,11 +126,10 @@ main {
     margin-top: 51px;
     transition: all .2s;
     overflow: hidden;
-    border-radius: 8px;
     box-shadow: 0 0  8px 0px lightgrey;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
     height: 230px;
 }
 #menu_content {
@@ -155,18 +152,18 @@ main {
     transition: all .2s ease;
 }
 .navbar_element_type_button {
-    background-color: #ffffff;
-    color: #000000;
-    border: solid 15px #ffffff;
+    background-color: #171717;
+    color: #ffffff;
+    border: solid 15px #171717;
     padding: 1px;
     font-size: medium;
     cursor: pointer;
     float: left;
 }
 .navbar_element {
-    background-color: #ffffff;
-    color: #000000;
-    border: solid 16px #fffdfd;
+    background-color: #171717;
+    color: #ffffff;
+    border: solid 16px #171717;
     font-size: medium;
     font-weight: bolder;
     text-decoration: none;
@@ -181,7 +178,7 @@ main {
 .bar1, .bar2, .bar3 {
     width: 20px;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -200,7 +197,8 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-90%, -50%);
+    text-align: left;
 }
 .banner_text_centered_header {
     font-size: 120px;
@@ -348,11 +346,11 @@ footer {
     display: block;
     bottom: 0;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #252525;
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
-    box-shadow: 0 0  8px 0px lightgrey;
+    margin-top: 30px;
 }
 footer a {
     display: block;
@@ -448,7 +446,7 @@ footer a:hover {
         margin-right: 10px;
     }
     main {
-        margin-top: 60px;
+        margin-top: 50px;
     }
     .banner {
         height: 200px;
