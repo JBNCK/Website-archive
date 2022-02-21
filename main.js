@@ -66,7 +66,9 @@ function menu_action() {
         element1.setAttribute("style", "display: block");
         var element = document.getElementById("menu_content");
         element.setAttribute("style", "display: block");
-        var element = document.getElementById("banner_hidable");
+        var element = document.getElementById("body_id");
+        element.setAttribute("style", "display: none");
+        var element = document.getElementById("footer_id");
         element.setAttribute("style", "display: none");
         var element = null
         menu_i = 1;
@@ -78,7 +80,9 @@ function menu_action() {
         element.setAttribute("style", "display: none");
         var element = document.getElementById("menu_content");
         element.setAttribute("style", "display: none");
-        var element = document.getElementById("banner_hidable");
+        var element = document.getElementById("body_id");
+        element.setAttribute("style", "display: block");
+        var element = document.getElementById("footer_id");
         element.setAttribute("style", "display: block");
         menu_i = 0;
         console.log("Collapsed menu")

@@ -1,21 +1,25 @@
 body {
-    background-color: #ffffff;
+    background-color: #050505;
     color: #121212;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: middle;
+    margin-top: 90px;
 }
 hr {
-    color: lightgrey;
-    border: lightgrey solid .5px;
+    color: #ffffff;
+    border: #ffffff solid .5px;
     border-radius: 24px;
 }
 a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     display: block;
     font-size: large;
 }
 a:hover {
     color: #0481ff;
+}
+h1 {
+    color: white;
 }

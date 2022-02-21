@@ -2,7 +2,7 @@
 body {
     margin: 0;
     transition: all .2s;
-    background-color: #252525;
+    background-color: #fcfcfc;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 0;
     font-size: 16px;
@@ -12,20 +12,24 @@ main {
     margin: 0;
     transition: all .2s;
 }
+.main_no_banner {
+    padding-top: 60px;
+}
 .main_content {
-    background-color: #212121;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 50px;
+    background-color: #ffffff;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 0px;
+    margin-bottom: 0;
     transition: all .5s;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: -10px;
     border: solid 0px #505050;
-    color: #ececec;
+    color: #000000;
     border-radius: 4px;
-    /*box-shadow: 0 0  8px 0px lightgrey;*/
+    box-shadow: 0 0  2px 0px #999999;
 }
 .main_content p {
     padding-left: 16px;
@@ -36,7 +40,7 @@ main {
     padding-top: 20px;
     padding-left: 16px;
     padding-right: 16px;
-    color: green;
+    color: #000000;
 }
 .main_content h2 {
     padding-top: 16px;
@@ -47,7 +51,7 @@ main {
 .main_content h3 {
     padding-left: 16px;
     padding-right: 16px;
-    color: #ffffff;
+    color: #000000;
 }
 .main_content h4 {
     padding-top: 16px;
@@ -71,12 +75,12 @@ main {
     padding-left: 16px;
     padding-right: 16px;
     /*font-size: normal;*/
-    color: #ffffff;
+    color: #0481ff;
     transition: all .5s ease;
     text-decoration: none;
 }
 .main_content a:hover {
-    color: #ececec;
+    color: #252525;
 }
 .main_content hr {
     display: none;
@@ -123,19 +127,21 @@ main {
     transition: all .2s ease;
     overflow: hidden;
     /* border-right: #ececec solid 1px; */
-    box-shadow: 0 0  8px 0px lightgrey;
+    box-shadow: 0 0  4px 0px grey;
     z-index: 1;
 }
 #menu {
     display: none;
-    margin-top: 51px;
+    /*margin-top: 51px;*/
     transition: all .2s;
     overflow: hidden;
-    box-shadow: 0 0  8px 0px lightgrey;
+    box-shadow: 0 0  8px 0px #505050;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 50px;
-    height: 230px;
+    height: 100vh;
+    width: 100%;
+    float: left;
+    top: 0;
 }
 #menu_content {
     display: none;
@@ -188,6 +194,7 @@ main {
     margin: 3px 0;
     transition: 0.4s;
 }
+
 .header_title {
     color: #707070;
     font-weight: bolder;
@@ -208,7 +215,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-98%, -50%);
+    transform: translate(-90%, -50%);
     text-align: left;
 }
 .banner_text_centered_header {
@@ -218,10 +225,10 @@ main {
     color: ffffff;
 }
 .banner_text_centered_subheader {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: lighter;
     font-family: 'Bebas Neue';
-    text-shadow: 0 0px 50px #000000;
+    text-align: left;
 }
 .banner_text_subcentered {
     position: absolute;
@@ -340,8 +347,9 @@ footer {
 .warning_standart {
     background-color: red;
     color: white;
-    border-radius: 0 0 8px 8px;
-    padding-top: 18px;
+    bottom: 0;
+    margin: 0;
+    padding: 8px;
 }
 .two_button_group {
     display: inline-block;
@@ -358,7 +366,7 @@ footer {
     display: block;
     bottom: 0;
     text-align: center;
-    background-color: #252525;
+    background-color: #fcfcfc;
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -388,7 +396,7 @@ footer a:hover {
 }
 @media screen and (max-width: 520px) and (min-width: 340px) {
     .banner_text_centered_header {
-        font-size: 50px;
+        font-size: 60px;
     }
     .photo_and_text_main_content_header_hr {
         display: none;
@@ -449,10 +457,36 @@ footer a:hover {
         height: 450px;
     }
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1100px) and (min-width: 600px) {
+    .main_content { 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 599px) {
     .main_content { 
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+@media screen and (min-width: 1350px) and (max-width: 1650px) {
+    .banner_text_centered {
+        transform: translate(-80%, -50%);
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1349px) {
+    .banner_text_centered {
+        transform: translate(-70%, -50%);
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 699px) {
+    .banner_text_centered {
+        transform: translate(-60%, -50%);
+    }
+}
+@media screen and (max-width: 510px) {
+    .banner_text_centered {
+        transform: translate(-50%, -50%);
     }
 }
 @media screen and (max-width: 340px) {
