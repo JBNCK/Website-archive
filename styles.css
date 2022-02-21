@@ -25,7 +25,7 @@ main {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    padding-bottom: -10px;
+    padding-bottom: 0px;
     border: solid 0px #505050;
     color: #000000;
     border-radius: 4px;
@@ -170,14 +170,12 @@ main {
     font-size: medium;
     cursor: pointer;
     float: left;
-    font-weight: lighter;
 }
 .navbar_element {
     background-color: rgba(0, 0, 0, 0);
     color: #ffffff;
     border: solid 16px rgba(0, 0, 0, 0);
     font-size: medium;
-    font-weight: lighter;
     text-decoration: none;
     text-align: center;
     margin-left: 2px;
@@ -194,7 +192,9 @@ main {
     margin: 3px 0;
     transition: 0.4s;
 }
-
+.footer_hr {
+    width: 18%;
+}
 .header_title {
     color: #707070;
     font-weight: bolder;
@@ -223,12 +223,16 @@ main {
     font-family: 'Bebas Neue';
     text-shadow: 0 0px 50px #000000;
     color: ffffff;
+    text-align: left;
 }
 .banner_text_centered_subheader {
     font-size: 20px;
     font-weight: lighter;
     font-family: 'Bebas Neue';
+    text-shadow: 0 0px 50px #000000;
     text-align: left;
+    background-color: #171717;
+    padding: 8px;
 }
 .banner_text_subcentered {
     position: absolute;
@@ -354,6 +358,7 @@ footer {
 .two_button_group {
     display: inline-block;
     width: 100%;
+    padding-bottom: 8px;
 }
 ul li p {
   margin-top: 0;  
