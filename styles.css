@@ -40,7 +40,13 @@ main {
     padding-top: 20px;
     padding-left: 16px;
     padding-right: 16px;
-    color: #000000;
+}
+.general_body_header {
+    margin-left: 17%;
+    margin-right: 17%;
+    transition: all .5s;
+    font-size: 40px;
+    text-align: center;
 }
 .main_content h2 {
     padding-top: 16px;
@@ -90,7 +96,10 @@ main {
     background-color: green;
     border: solid green 0.1px;
 }
-
+footer p {
+    margin-left: 26px;
+    margin-right: 26px;
+}
 #navbar {
     display: none;
     overflow: hidden;
@@ -219,7 +228,7 @@ main {
     text-align: left;
 }
 .banner_text_centered_header {
-    font-size: 180px;
+    font-size: 160px;
     font-family: 'Bebas Neue';
     text-shadow: 0 0px 50px #000000;
     color: ffffff;
@@ -236,7 +245,7 @@ main {
 }
 .banner_text_subcentered {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -467,9 +476,17 @@ footer a:hover {
         margin-left: 5%;
         margin-right: 5%;
     }
+    .general_body_header {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 @media screen and (max-width: 599px) {
     .main_content { 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .general_body_header {
         margin-left: 10px;
         margin-right: 10px;
     }
