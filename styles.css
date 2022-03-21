@@ -37,9 +37,12 @@ main {
     padding-bottom: 16px;
 }
 .main_content h1 {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 100px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -49,6 +52,10 @@ main {
     transition: all .5s;
     font-size: 40px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .main_content h2 {
     padding-top: 16px;
@@ -232,7 +239,7 @@ footer p {
 }
 .banner_text_centered_header {
     font-size: 160px;
-    font-family: 'Bebas Neue';
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 0 0px 50px #000000;
     color: ffffff;
     text-align: left;
@@ -240,7 +247,7 @@ footer p {
 .banner_text_centered_subheader {
     font-size: 20px;
     font-weight: lighter;
-    font-family: 'Bebas Neue';
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 0 0px 50px #000000;
     text-align: left;
     background-color: #171717;
@@ -401,7 +408,14 @@ footer a:hover {
     margin-left: 17%;
     margin-right: 17%;
 }
-
+.general_body_hr {
+    text-align: center;
+    width: 225px;
+    border: 1px solid black;
+}
+hr {
+    border: solid .5px lightgrey;
+}
 
 @media screen and (max-width: 1600px) {
     .main_content h1 {
