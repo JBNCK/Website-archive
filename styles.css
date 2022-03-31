@@ -45,7 +45,7 @@ main {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .general_body_header {
     margin-left: 17%;
@@ -242,7 +242,7 @@ footer p {
 }
 .banner_text_centered_header {
     font-size: 160px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0 0px 50px #000000;
     color: ffffff;
     text-align: left;
@@ -324,7 +324,7 @@ footer p {
     color: #ffffff;
 }
 .main_content_more_button2 {
-    background-color: #0481ff;
+    background-color: #ffffff;
     color: #ffffff;
     border: solid 2px #0481ff;
     padding: 10px;
@@ -333,12 +333,12 @@ footer p {
     border-radius: 8px;
     transition: all .5s ease;
     margin-bottom: 10px;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
     width: 46%;
 }
 .main_content_more_button2 a {
-    color: #ffffff;
+    color: #0481ff;
     text-decoration: none;
     margin-right: 0;
 }
@@ -346,16 +346,17 @@ footer p {
     background-color: #3097ff;
     cursor: pointer;
     border: solid 2px #3097ff;
+    color: #ffffff;
 }
-.main_content_more_button2 a:hover {
+.main_content_more_button2:hover a {
     color: #ffffff;
 }
 .main_content_more_button2_github {
     border: #333333 2px solid;
-    background-color: #333333;
+    background-color: #ffffff;
 }
 .main_content_more_button2_github a {
-    color: #ffffff;
+    color: #333333;
 }
 .main_content_more_button2_github:hover {
     border: #454545 2px solid;
@@ -426,6 +427,13 @@ hr {
 }
 .general_body_hr2 {
     display: none;
+}
+#navbar img {
+    display: none;
+}
+.p_with_inline_a {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 @media screen and (max-width: 1600px) {
@@ -538,7 +546,7 @@ hr {
         margin-right: 10px;
     }
     .main_content h1 {
-        font-size: 40px;
+        font-size: 45px;
     }
     .general_body_hr {
         width: 98%;
@@ -570,12 +578,12 @@ hr {
 }
 @media screen and (max-width: 450px) and (min-width: 341px) {
     .main_content h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 @media screen and (max-width: 340px) {
     .banner_text_centered_header {
-        font-size: 40px;
+        font-size: 35px;
     }
     .main_content_more_button {
         float: none;

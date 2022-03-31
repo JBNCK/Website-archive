@@ -27,12 +27,29 @@ function mobile_scale() {
 
 function sidebar_action() {
     if (sidebar_i == 0) {
-        var element = document.getElementById("sidebar");
-        element.setAttribute("style", "width: 225px");
-        var element = document.getElementById("sidebar_content");
-        element.setAttribute("style", "width: 225px");
-        sidebar_i = 1;
-        console.log("Expanded sidebar")
+        if (navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i) 
+                || navigator.userAgent.match(/iPad/i) 
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)) {
+            
+            var element = document.getElementById("sidebar");
+            element.setAttribute("style", "width: 100%");
+            var element = document.getElementById("sidebar_content");
+            element.setAttribute("style", "width: 100%");
+            sidebar_i = 1;
+            console.log("Expanded sidebar")
+        }
+        else {
+            var element = document.getElementById("sidebar");
+            element.setAttribute("style", "width: 225px");
+            var element = document.getElementById("sidebar_content");
+            element.setAttribute("style", "width: 225px");
+            sidebar_i = 1;
+            console.log("Expanded sidebar")
+        }
     }
     else {
         var element = document.getElementById("sidebar");
