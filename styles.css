@@ -117,7 +117,7 @@ footer p {
     width: 100%;
     top: 0;
     /*background-color: rgba(0, 0, 0, 0);*/
-    background-color: #000000;
+    background-color: #ffffff;
     transition: all 1s;
     height: 54px;
     z-index: 2;
@@ -130,7 +130,7 @@ footer p {
     width: 100%;
     top: 0;
     /*background-color: rgba(0, 0, 0, 0);*/
-    background-color: #000000;
+    background-color: #ffffff;
     transition: all 1s;
     height: 54px;
     z-index: 2;
@@ -184,18 +184,18 @@ footer p {
     transition: all .2s ease;
 }
 .navbar_element_type_button {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 255);
     color: #ffffff;
-    border: solid 15px rgba(0, 0, 0, 0);
+    border: solid 15px rgba(255, 255, 255, 255);
     padding: 1px;
     font-size: medium;
     cursor: pointer;
     float: left;
 }
 .navbar_element {
-    background-color: rgba(0, 0, 0, 0);
-    color: #ffffff;
-    border: solid 16px rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 255);
+    color: #000000;
+    border: solid 16px rgba(255, 255, 255, 255);
     font-size: 18px;
     text-decoration: none;
     text-align: center;
@@ -209,7 +209,7 @@ footer p {
 .bar1, .bar2, .bar3 {
     width: 20px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 4px 0;
     transition: 0.4s;
 }
