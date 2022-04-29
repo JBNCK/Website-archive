@@ -11,6 +11,7 @@ body {
 main {
     margin: 0;
     transition: all .2s;
+    margin-top: 140px;
 }
 .main_no_banner {
     padding-top: 60px;
@@ -117,7 +118,7 @@ footer p {
     width: 100%;
     top: 0;
     /*background-color: rgba(0, 0, 0, 0);*/
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     transition: all 1s;
     height: 54px;
     z-index: 2;
@@ -130,7 +131,7 @@ footer p {
     width: 100%;
     top: 0;
     /*background-color: rgba(0, 0, 0, 0);*/
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     transition: all 1s;
     height: 54px;
     z-index: 2;
@@ -138,7 +139,7 @@ footer p {
 }
 
 #sidebar {
-    background: #ffffff;
+    background: #fbfbfb;
     position: fixed;
     top: 50px;
     bottom: 0px;
@@ -147,13 +148,13 @@ footer p {
     padding: 20px 0;
     transition: all .2s ease;
     overflow: hidden;
-    /* border-right: #ececec solid 1px; */
-    box-shadow: 0 0  4px 0px grey;
+    /*border-right: #f6f6f6 solid 1px;*/
+    /*box-shadow: 0 0  4px 0px #f6f6f6;*/
     z-index: 1;
 }
 #menu {
-    display: none;
-    /*margin-top: 51px;*/
+/*    display: none;
+
     transition: all .2s;
     overflow: hidden;
     box-shadow: 0 0  8px 0px #505050;
@@ -163,13 +164,28 @@ footer p {
     width: 100%;
     float: left;
     top: 0;
+    margin-top: 0;
+    position: fixed;
+    z-index: 1;*/
+    background: #fbfbfb;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    padding: 20px 0;
+    transition: all .2s ease;
+    overflow: hidden;
+    /*border-right: #f6f6f6 solid 1px;*/
+    /*box-shadow: 0 0  4px 0px #f6f6f6;*/
+    z-index: 1;
+    width: 0;
 }
 #menu_content {
-    display: none;
     transition: all .2s;
     overflow: hidden;
     border: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
 }
 #menu_button {
@@ -184,18 +200,18 @@ footer p {
     transition: all .2s ease;
 }
 .navbar_element_type_button {
-    background-color: rgba(255, 255, 255, 255);
-    color: #ffffff;
-    border: solid 15px rgba(255, 255, 255, 255);
+    background-color: #f8f8f8;
+    color: #f8f8f8;
+    border: solid 15px #f8f8f8;
     padding: 1px;
     font-size: medium;
     cursor: pointer;
     float: left;
 }
 .navbar_element {
-    background-color: rgba(255, 255, 255, 255);
+    background-color: #f8f8f8;
     color: #000000;
-    border: solid 16px rgba(255, 255, 255, 255);
+    border: solid 16px #f8f8f8;
     font-size: 18px;
     text-decoration: none;
     text-align: center;
@@ -227,11 +243,13 @@ footer p {
     position: relative;
     height: 100vh;
     margin-bottom: 1px;
+    
 }
 .banner_container {
     position: relative;
     text-align: center;
     color: white;
+    display: none;
 }
 .banner_text_centered {
     position: absolute;
@@ -435,6 +453,25 @@ hr {
     padding-left: 0;
     padding-right: 0;
 }
+.bottom_shadow {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0px solid #ffffff;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+.bottom_shadow_div {
+    box-shadow: 5px -20px 35px 55px #ffffff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.shadow_margin {
+    margin: 110px;
+}
 
 @media screen and (max-width: 1600px) {
     .main_content h1 {
@@ -529,7 +566,7 @@ hr {
         margin-right: 5%;
     }
     .main_content h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
     .main_box_seperator {
         margin-left: 5%;
@@ -546,7 +583,7 @@ hr {
         margin-right: 10px;
     }
     .main_content h1 {
-        font-size: 45px;
+        font-size: 62px;
     }
     .general_body_hr {
         width: 98%;
@@ -578,7 +615,7 @@ hr {
 }
 @media screen and (max-width: 450px) and (min-width: 341px) {
     .main_content h1 {
-        font-size: 40px;
+        font-size: 55px;
     }
 }
 @media screen and (max-width: 340px) {

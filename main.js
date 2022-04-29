@@ -44,9 +44,9 @@ function sidebar_action() {
         }
         else {
             var element = document.getElementById("sidebar");
-            element.setAttribute("style", "width: 225px");
+            element.setAttribute("style", "width: 300px");
             var element = document.getElementById("sidebar_content");
-            element.setAttribute("style", "width: 225px");
+            element.setAttribute("style", "width: 100%");
             sidebar_i = 1;
             console.log("Expanded sidebar")
         }
@@ -79,28 +79,18 @@ function collapse_random_area_sidebar() {
 
 function menu_action() {
     if (menu_i == 0) {
-        var element1 = document.getElementById("menu");
-        element1.setAttribute("style", "display: block");
+        var element = document.getElementById("menu");
+        element.setAttribute("style", "width: 100%");
         var element = document.getElementById("menu_content");
-        element.setAttribute("style", "display: block");
-        var element = document.getElementById("body_id");
-        element.setAttribute("style", "display: none");
-        var element = document.getElementById("footer_id");
-        element.setAttribute("style", "display: none");
-        var element = null
+        element.setAttribute("style", "width: 100%");
         menu_i = 1;
-        window.scrollTo({top: 0, behavior: 'smooth'});
         console.log("Expanded menu")
     }
     else {
         var element = document.getElementById("menu");
-        element.setAttribute("style", "display: none");
+        element.setAttribute("style", "width: 0");
         var element = document.getElementById("menu_content");
-        element.setAttribute("style", "display: none");
-        var element = document.getElementById("body_id");
-        element.setAttribute("style", "display: block");
-        var element = document.getElementById("footer_id");
-        element.setAttribute("style", "display: block");
+        element.setAttribute("style", "width: 0");
         menu_i = 0;
         console.log("Collapsed menu")
     }

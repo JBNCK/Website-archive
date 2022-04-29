@@ -221,3 +221,7 @@ com.google.audio.hearing.visualization.accessibility.scribe
 com.google.android.projection.gearhead
 com.samsung.android.privateshare
 com.samsung.android.mateagent
+com.google.android.os.ass
+com.samsung.android.providers.factory
+com.samsung.android.gru
+com.samsung.android.cidmanager
