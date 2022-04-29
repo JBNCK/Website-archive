@@ -19,6 +19,7 @@ a {
     display: block;
     font-size: 28px;
     font-weight: 600;
+    padding-bottom: 28px;
 }
 a:hover {
     color: #0481ff;
@@ -28,4 +29,11 @@ h1 {
 }
 p {
     color: #696969; /* 69 nice :) */
+}
+.sub_a {
+        text-decoration: none;
+        color: #696969; /* 69 nice :) */
+        transition: .5s ease all;
+        font-size: medium;
+        font-weight: normal;
 }
