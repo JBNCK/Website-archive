@@ -47,6 +47,8 @@ function sidebar_action() {
             element.setAttribute("style", "width: 300px");
             var element = document.getElementById("sidebar_content");
             element.setAttribute("style", "width: 100%");
+            var element = document.getElementById("expanded_sidebar_shadow");
+            element.setAttribute("style", "display: block");
             sidebar_i = 1;
             console.log("Expanded sidebar")
         }
@@ -56,6 +58,8 @@ function sidebar_action() {
         element.setAttribute("style", "width: 0");
         var element = document.getElementById("sidebar_content");
         element.setAttribute("style", "width: 0");
+        var element = document.getElementById("expanded_sidebar_shadow");
+        element.setAttribute("style", "display: none");
         sidebar_i = 0;
         console.log("Collapsed sidebar")
     }
@@ -67,6 +71,8 @@ function collapse_random_area_sidebar() {
         element.setAttribute("style", "width: 0")
         var element = document.getElementById("sidebar_content");
         element.setAttribute("style", "width: 0");
+        var element = document.getElementById("expanded_sidebar_shadow");
+        element.setAttribute("style", "display: none");
         sidebar_i = 0;
         console.log("Collapsed sidebar")
 

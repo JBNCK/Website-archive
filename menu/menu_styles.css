@@ -28,7 +28,8 @@ h1 {
     color: white;
 }
 p {
-    color: #696969; /* 69 nice :) */
+    /*color: #696969; /* 69 nice :) */
+    color: #505050;
 }
 .sub_a {
         text-decoration: none;
