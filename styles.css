@@ -462,12 +462,14 @@ hr {
     background-color: #ffffff;
 }
 .bottom_shadow_div {
-    box-shadow: 5px 55px 35px 105px #ffffff;
+    /*box-shadow: 5px 55px 35px 105px #ffffff;
     position: fixed;
     bottom: 0px;
     width: 100%;
     padding: 0;
     margin: 0;
+    */
+    display: none;
 }
 .shadow_margin {
     margin: 80px;
@@ -481,12 +483,13 @@ hr {
     background-color: #ffffff;
 }
 .top_shadow_div {
-    box-shadow: 5px -55px 35px 105px #ffffff;
+    /*box-shadow: 1px -55px 700px 230px #ffffff;
     position: fixed;
     top: 50px;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0;*/
+    display: none;
 }
 #expanded_sidebar_shadow {
     float: left;
@@ -642,7 +645,7 @@ hr {
 }
 @media screen and (max-width: 450px) and (min-width: 341px) {
     .main_content h1 {
-        font-size: 55px;
+        font-size: 50px;
     }
 }
 @media screen and (max-width: 340px) {

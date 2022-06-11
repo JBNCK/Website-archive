@@ -1,0 +1,145 @@
+sus
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+    	<link rel="icon" href="media/favicon.jpg">
+		<meta name="viewport" content="width=device-width" ,="" initial-scale="1.0">
+		<title>Jan Biernacik - Medien</title>
+		<script src="main.js"></script>
+	</head>
+	<body onload="main(); mobile_scale()">
+		<header>
+			<div id="navbar">
+				<button onclick="sidebar_action()" class="navbar_element_type_button" id="sidebar_button">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</button>
+				<a class="navbar_element" href="index.html">Startseite</a>
+				<a class="navbar_element" href="contact.html">Kontakt</a>
+				<a class="navbar_element" href="media.html">Medien</a>
+				<a class="navbar_element" href="about.html">Über mich</a>				
+				<img style="float: right;" src="media/favicon.jpg" height="100%">
+			</div>
+			<div id="mobile_navbar">
+				<button onclick="sidebar_action()" class="navbar_element_type_button" id="sidebar_button">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</button>
+				<button onclick="menu_action()" class="navbar_element" id="menu_button">Navigation >></button>
+			</div>
+		</header>
+		<div onclick="collapse_random_area_sidebar()" class="expanded_sidebar_shadow">
+			<h1>Peter</h1>
+		</div>
+		<div onclick="collapse_random_area_sidebar()" id="expanded_sidebar_shadow">
+		<h1>peter</h1></div>
+		<div id="menu">		<footer onclick="collapse_random_area_sidebar()" id="footer_id" class="BOTTOM">
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>Diese Webseite fällt mit Ausschluss der Bilder unter die GPLv3-Lizenz.</p>
+			<hr class="footer_hr">
+			<a href="https://www.youtube.com/watch?v=iik25wqIuFo">Privacy Policy</a>
+			<a href="contact.html">Kontakt</a>
+		</footer>
+		<div name="shadow_margin" class="shadow_margin"></div>
+		<div class="bottom_shadow_div">
+			<hr class="bottom_shadow">
+		</div>
+			<iframe id="menu_content" src="menu/menu_content.html"></iframe>
+		</div>
+		<div id="sidebar">
+			<iframe id="sidebar_content" src="sidebar/sidebar_content.html"></iframe>
+		</div>
+	    <main onclick="collapse_random_area_sidebar()" class="TOP main_no_banner">
+			<div class="main_content">
+			    <h1>Medien</h1>
+			    <hr class="main_content_header_hr">
+                <p>Kommt bald.</p>
+            </div>
+			<hr class="general_body_hr">        <center>
+				<h3>Links</h3>
+				<a href="https://www.github.com/JBNCK">GitHub</a>
+				<h3>Neustes Projekt</h3>
+				<a href="../projects/samsung-debloat-liste.html">Samsung-Debloat-Liste</a></li></ul>
+				<br>
+				<a style="color: white;" href="https://www.janbiernacik.com/linuskrassewebsite/">.</a>
+				</center>
+			<h1 class="general_body_header">Allgemein</h1>
+			<hr class="general_body_hr"><hr class="general_body_hr">
+			<h1 class="general_body_header">Allgemein</h1>
+			<hr class="general_body_hr">
+            <div class="main_content">
+			    <h1>Projekte</h1>
+			    <hr class="main_content_header_hr">
+                <p>Kommt auch bald.</p>        <center>
+					<h3>Links</h3>
+					<a href="https://www.github.com/JBNCK">GitHub</a>
+					<h3>Neustes Projekt</h3>
+					<a href="../projects/samsung-debloat-liste.html">Samsung-Debloat-Liste</a></li></ul>
+					<br>
+					<a style="color: white;" href="https://www.janbiernacik.com/linuskrassewebsite/">.</a>
+					</center>
+            </div>
+		</main>
+		<footer id="footer_id" class="BOTTOM">
+			<p>Diese Webseite fällt mit Ausschluss der Bilder unter die GPLv3-Lizenz.</p>
+			<hr class="footer_hr">
+			<p style="display: inline;">Banner von</p><br><a href="https://unsplash.com">Unsplash</a>
+			<hr class="footer_hr">
+			<a href="https://www.youtube.com/watch?v=iik25wqIuFo">Privacy Policy</a>
+			<a href="contact.html">Kontakt</a>
+		</footer>
+		<div class="main_content">        <center>
+			<h3>Links</h3>
+			<a href="https://www.github.com/JBNCK">GitHub</a>
+			<h3>Neustes Projekt</h3>
+			<a href="../projects/samsung-debloat-liste.html">Samsung-Debloat-Liste</a></li></ul>
+			<br>
+			<a style="color: white;" href="https://www.janbiernacik.com/linuskrassewebsite/">.</a>
+			</center>        <center>
+				<h3>Links</h3>
+				<a href="https://www.github.com/JBNCK">GitHub</a>
+				<h3>Neustes Projekt</h3>
+				<a href="../projects/samsung-debloat-liste.html">Samsung-Debloat-Liste</a></li></ul>
+				<br>
+				<a style="color: white;" href="https://www.janbiernacik.com/linuskrassewebsite/">.</a>
+				</center>        <center>
+					<h3>Links</h3>
+					<a href="https://www.github.com/JBNCK">GitHub</a>
+					<h3>Neustes Projekt</h3>
+					<a href="../projects/samsung-debloat-liste.html">Samsung-Debloat-Liste</a></li></ul>
+					<br>
+					<a style="color: white;" href="https://www.janbiernacik.com/linuskrassewebsite/">.</a>
+					</center>
+			<hr class="main_content_header_hr">
+			<p>Kommt auch bald.</p>
+		</div>
+	</main>
+	<footer id="footer_id" class="BOTTOM">
+		<p>Diese Webseite fällt mit Ausschluss der Bilder unter die GPLv3-Lizenz.</p>
+		<hr class="footer_hr">
+		<p style="display: inline;">Banner von</p><br><a href="https://unsplash.com">Unsplash</a>
+		<hr class="footer_hr">
+		<a href="https://www.youtube.com/watch?v=iik25wqIuFo">Privacy Policy</a>
+		<a href="contact.html">Kontakt</a>
+	</footer>
+		<footer id="footer_id" class="BOTTOM">
+			<p>Diese Webseite fällt mit Ausschluss der Bilder unter die GPLv3-Lizenz.</p>
+			<hr class="footer_hr">
+			<p style="display: inline;">Banner von</p><br><a href="https://unsplash.com">Unsplash</a>
+			<hr class="footer_hr">
+			<a href="https://www.youtube.com/watch?v=iik25wqIuFo">Privacy Policy</a>
+			<a href="contact.html">Kontakt</a>
+		</footer>
+	</body>
+</html>
+
+
+
